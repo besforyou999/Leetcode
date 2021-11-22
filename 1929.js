@@ -1,3 +1,10 @@
+// one liner
+var getConcatenation = function(nums) {
+	//spread the nums array twice and return it
+    return [...nums,...nums]
+};
+
+// O(n)
 var getConcatenation = function(nums) {
     let n = nums.length;
     let ans = new Array(n * 2);
