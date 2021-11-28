@@ -3,7 +3,7 @@ class Solution {
         public int numSplits(String s) {
 
             HashMap<Character, Integer> left = new HashMap<>();
-            HashMap<Character, Integer> right = new HashMap<>();
+            HashMap<Character, Integer> right = new ashMap<>();
 
             for ( int i = 0 ; i < s.length() ; i++ ) {
                 char c = s.charAt(i);
