@@ -1,6 +1,17 @@
 var maxDepth = function(root) {
-    if (root == null || root == undefined )
-        return 0;
     
-    return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+    var maxDepth = 0;
+    
+    function solve(root, depth) {
+        if (!root) return;
+        
+        if (depth > maxDepth) maxDepth = depth;
+        
+        solve(root.left, depth + 1);
+        solve(root.right, depth + 1);
+    }
+    
+    solve(root, 1);
+    
+    return maxDepth;
 };
