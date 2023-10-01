@@ -5,10 +5,10 @@
 
 ## How to commit
 
-When adding a file to git,
+<br>
 
+문제 번호 + 문제 제목이 합쳐진 커밋 메세지를 포함해 커밋할 것.
 
-commit with a message containing 'Problem number + Problem Title' together
+<br>
 
-
-to check the latest problem pushed to the git with 'git log'
+git log 명령어로 이전 커밋 메세지와 비슷하게 메세지를 작성하자
